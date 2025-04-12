@@ -1,0 +1,20 @@
+
+a = [8, 5, 69, 25, 8, 4, 7, 2, 13, 53]
+prime = []
+non_prime=[]
+for num in a:
+    fact=0
+    for i in range(1,num+1):
+        if num%i==0:
+            fact=fact+1
+    if fact==2:
+        prime.append(num)
+    else:
+        non_prime.append(num)        
+print(prime,"prime")
+print(non_prime,"non prime")
+
+
+
+details={"name":"Prashanth","age":22,"skills": ["python","java","c","C++"]}
+print(len(details["skills"]))
